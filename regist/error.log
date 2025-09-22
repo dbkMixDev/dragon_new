@@ -1,0 +1,102 @@
+2025-06-18 06:41:11 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:41:32 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:49:35 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:56:20 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:57:11 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:57:15 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:57:16 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:57:17 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:57:19 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-18 06:57:20 - Exception in tokenmid.php: Gagal menyimpan transaksi: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'pending', NOW())' at line 2 - File: C:\xampp\htdocs\dragon_production\regist\tokenmid.php - Line: 109
+2025-06-20 23:42:01 - Script started - tokenmid.php
+2025-06-20 23:42:01 - Current directory: C:\xampp\htdocs\dragon_production\regist
+2025-06-20 23:42:01 - Midtrans file exists: YES
+2025-06-20 23:42:01 - Config file exists: YES
+2025-06-20 23:42:01 - Midtrans.php loaded successfully
+2025-06-20 23:42:01 - config.php loaded successfully
+2025-06-20 23:42:01 - POST request received
+2025-06-20 23:42:01 - Input received - Email: dwibudikur@gmail.com, Amount: 350000, Package: starter
+2025-06-20 23:42:01 - Database connection OK
+2025-06-20 23:42:01 - Generated order_id: DP-20250620234201-7028
+2025-06-20 23:42:01 - Query: SELECT id, status FROM userx WHERE email = 'dwibudikur@gmail.com'
+2025-06-20 23:42:01 - Existing user check result: null
+2025-06-20 23:42:01 - Pending transaction query: SELECT order_id FROM transactions 
+              WHERE email = 'dwibudikur@gmail.com' AND status = 'pending' 
+              AND created_at > DATE_SUB(NOW(), INTERVAL 1 HOUR)
+              ORDER BY created_at DESC LIMIT 1
+2025-06-20 23:42:01 - Pending transaction result: null
+2025-06-20 23:42:01 - Insert query: INSERT INTO transactions (order_id, email, phone, full_name, amount, status, created_at, package) 
+              VALUES ('DP-20250620234201-7028', 'dwibudikur@gmail.com', '08984390348', 'Dwi Budi Kurniawan', 350000, 'pending', NOW(), 'starter')
+2025-06-20 23:42:01 - Transaction inserted successfully
+2025-06-20 23:42:01 - Session data saved
+2025-06-20 23:42:01 - Success response: {"success":true,"order_id":"DP-20250620234201-7028","redirect_url":"checkout.php?order_id=DP-20250620234201-7028","message":"Data transaksi berhasil disimpan"}
+2025-06-20 23:42:01 - Database connection closed
+2025-06-20 23:42:01 - Script ended
+2025-06-21 05:56:02 - Script started - tokenmid.php
+2025-06-21 05:56:02 - Current directory: C:\xampp\htdocs\dragon_production\regist
+2025-06-21 05:56:02 - Midtrans file exists: YES
+2025-06-21 05:56:02 - Config file exists: YES
+2025-06-21 05:56:02 - Midtrans.php loaded successfully
+2025-06-21 05:56:02 - config.php loaded successfully
+2025-06-21 05:56:02 - POST request received
+2025-06-21 05:56:02 - Input received - Email: qhoiriyah@gmail.com, Amount: 350000, Package: starter
+2025-06-21 05:56:02 - Database connection OK
+2025-06-21 05:56:02 - Generated order_id: DP-20250621055602-9036
+2025-06-21 05:56:02 - Query: SELECT id, status FROM userx WHERE email = 'qhoiriyah@gmail.com'
+2025-06-21 05:56:02 - Existing user check result: null
+2025-06-21 05:56:02 - Pending transaction query: SELECT order_id FROM transactions 
+              WHERE email = 'qhoiriyah@gmail.com' AND status = 'pending' 
+              AND created_at > DATE_SUB(NOW(), INTERVAL 1 HOUR)
+              ORDER BY created_at DESC LIMIT 1
+2025-06-21 05:56:02 - Pending transaction result: null
+2025-06-21 05:56:02 - Insert query: INSERT INTO transactions (order_id, email, phone, full_name, amount, status, created_at, package) 
+              VALUES ('DP-20250621055602-9036', 'qhoiriyah@gmail.com', '08984390348', 'qqqq', 350000, 'pending', NOW(), 'starter')
+2025-06-21 05:56:02 - Transaction inserted successfully
+2025-06-21 05:56:02 - Session data saved
+2025-06-21 05:56:02 - Success response: {"success":true,"order_id":"DP-20250621055602-9036","redirect_url":"checkout.php?order_id=DP-20250621055602-9036","message":"Data transaksi berhasil disimpan"}
+2025-06-21 05:56:02 - Database connection closed
+2025-06-21 05:56:02 - Script ended
+2025-06-21 05:56:37 - Script started - tokenmid.php
+2025-06-21 05:56:37 - Current directory: C:\xampp\htdocs\dragon_production\regist
+2025-06-21 05:56:37 - Midtrans file exists: YES
+2025-06-21 05:56:37 - Config file exists: YES
+2025-06-21 05:56:37 - Midtrans.php loaded successfully
+2025-06-21 05:56:37 - config.php loaded successfully
+2025-06-21 05:56:37 - POST request received
+2025-06-21 05:56:37 - Input received - Email: qhoiriyah@gmail.com, Amount: 350000, Package: starter
+2025-06-21 05:56:37 - Database connection OK
+2025-06-21 05:56:37 - Generated order_id: DP-20250621055637-3759
+2025-06-21 05:56:37 - Query: SELECT id, status FROM userx WHERE email = 'qhoiriyah@gmail.com'
+2025-06-21 05:56:37 - Existing user check result: null
+2025-06-21 05:56:37 - Pending transaction query: SELECT order_id FROM transactions 
+              WHERE email = 'qhoiriyah@gmail.com' AND status = 'pending' 
+              AND created_at > DATE_SUB(NOW(), INTERVAL 1 HOUR)
+              ORDER BY created_at DESC LIMIT 1
+2025-06-21 05:56:37 - Pending transaction result: {"order_id":"DP-20250621055602-9036"}
+2025-06-21 05:56:37 - Found pending transaction
+2025-06-21 05:57:28 - Script started - tokenmid.php
+2025-06-21 05:57:28 - Current directory: C:\xampp\htdocs\dragon_production\regist
+2025-06-21 05:57:28 - Midtrans file exists: YES
+2025-06-21 05:57:28 - Config file exists: YES
+2025-06-21 05:57:28 - Midtrans.php loaded successfully
+2025-06-21 05:57:28 - config.php loaded successfully
+2025-06-21 05:57:28 - POST request received
+2025-06-21 05:57:28 - Input received - Email: qhsoiriyah@gmail.com, Amount: 350000, Package: starter
+2025-06-21 05:57:28 - Database connection OK
+2025-06-21 05:57:28 - Generated order_id: DP-20250621055728-6531
+2025-06-21 05:57:28 - Query: SELECT id, status FROM userx WHERE email = 'qhsoiriyah@gmail.com'
+2025-06-21 05:57:28 - Existing user check result: null
+2025-06-21 05:57:28 - Pending transaction query: SELECT order_id FROM transactions 
+              WHERE email = 'qhsoiriyah@gmail.com' AND status = 'pending' 
+              AND created_at > DATE_SUB(NOW(), INTERVAL 1 HOUR)
+              ORDER BY created_at DESC LIMIT 1
+2025-06-21 05:57:28 - Pending transaction result: null
+2025-06-21 05:57:28 - Insert query: INSERT INTO transactions (order_id, email, phone, full_name, amount, status, created_at, package) 
+              VALUES ('DP-20250621055728-6531', 'qhsoiriyah@gmail.com', '08984390348', 'girimoko', 350000, 'pending', NOW(), 'starter')
+2025-06-21 05:57:28 - Transaction inserted successfully
+2025-06-21 05:57:28 - Session data saved
+2025-06-21 05:57:28 - Success response: {"success":true,"order_id":"DP-20250621055728-6531","redirect_url":"checkout.php?order_id=DP-20250621055728-6531","message":"Data transaksi berhasil disimpan"}
+2025-06-21 05:57:28 - Database connection closed
+2025-06-21 05:57:28 - Script ended
+2025-06-21 16:35:19 - Script started - tokenmid.php
+2025-09-02 14:07:39 - Script started - tokenmid.php
